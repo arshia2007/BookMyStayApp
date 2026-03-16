@@ -34,5 +34,14 @@ class BookMyStayApp {
         suiteRoomInv.displayRoomDetails();
         System.out.println("Available Rooms: " +
                 inventory.getRoomAvailability().get("Suite Room"));
+
+        // UC4 - Room Search & Availability Check
+        RoomSearchService searchService = new RoomSearchService();
+
+        searchService.searchAvailableRooms(
+                inventory,
+                doubleRoomInv,
+                suiteRoomInv
+        );
     }
 }

@@ -11,7 +11,6 @@ public class RoomInventory {
     }
 
     private void initializeInventory() {
-        roomAvailability.put("Single Room", 5);
         roomAvailability.put("Double Room", 3);
         roomAvailability.put("Suite Room", 2);
     }
